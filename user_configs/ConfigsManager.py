@@ -21,3 +21,11 @@ class ConfigsManager:
     @property
     def headless_mode_enabled(self):
         return bool(self.user_configs['headless_mode_enabled'])
+
+    @property
+    def page_load_timeout(self):
+        return int(self.user_configs['page_load_timeout_seconds'])
+
+    @property
+    def implicitly_wait(self):
+        return int(self.user_configs['implicitly_wait_seconds'])

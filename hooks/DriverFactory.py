@@ -12,8 +12,8 @@ class DriverFactory:
             chrome_options = webdriver.ChromeOptions()
             chrome_options.add_argument("headless")
             driver = webdriver.Chrome(chrome_options=chrome_options) 
-            driver.set_page_load_timeout(20)
-            driver.implicitly_wait(20)
+            driver.set_page_load_timeout(self.configs_manager.page_load_timeout)
+            driver.implicitly_wait(self.configs_manager.implicitly_wait)
             driver.maximize_window()
             return driver 
         else:
