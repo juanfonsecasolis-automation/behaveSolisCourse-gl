@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## Usage
 ```
-source $.test_automation/bin/activate
+source .test_automation/bin/activate
 behave
 ```
 

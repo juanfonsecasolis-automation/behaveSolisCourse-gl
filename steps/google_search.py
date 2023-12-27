@@ -6,7 +6,7 @@ from pages.SearchPage import SearchPage
 def step_impl(context):
     global searchPage
     searchPage = SearchPage(context)
-    context.driver.get(context.user_configs['base_url'])
+    context.driver.get(context.configs_manager.base_url)
     assert_that(context.driver.title, equal_to("Google"))
 
 @step('I search for "{search_term}"')
