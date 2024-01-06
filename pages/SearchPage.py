@@ -1,9 +1,9 @@
-class SearchPage:
+from pages.BasePage import BasePage
 
-    context = None
+class SearchPage(BasePage):
 
     def __init__(self, context):
-        self.context = context
+        super().__init__(context)
 
     def search_term(self, search_term):
         self.context.driver.find_element("xpath", "//textarea[@id='APjFqb']").send_keys(search_term)
