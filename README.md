@@ -18,7 +18,8 @@ pip install -r requirements.txt
 ## Usage
 ```
 source .test_automation/bin/activate
-./myBehave.sh
+behave -v -D configs=chrome.json
+allure serve ./allure-results
 deactivate
 ```
 
