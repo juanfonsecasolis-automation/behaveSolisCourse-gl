@@ -18,7 +18,8 @@ pip install -r requirements.txt
 ## Usage
 ```
 source .test_automation/bin/activate
-behave
+./myBehave.sh
+deactivate
 ```
 
 ## References
